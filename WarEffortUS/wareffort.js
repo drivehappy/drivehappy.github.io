@@ -519,11 +519,11 @@ function _Debug_crash_UNUSED(identifier, fact1, fact2, fact3, fact4)
 
 function _Debug_regionToString(region)
 {
-	if (region.I.z === region.O.z)
+	if (region.ak.ab === region.ap.ab)
 	{
-		return 'on line ' + region.I.z;
+		return 'on line ' + region.ak.ab;
 	}
-	return 'on lines ' + region.I.z + ' through ' + region.O.z;
+	return 'on lines ' + region.ak.ab + ' through ' + region.ap.ab;
 }
 
 
@@ -1857,9 +1857,9 @@ var _Platform_worker = F4(function(impl, flagDecoder, debugMetadata, args)
 	return _Platform_initialize(
 		flagDecoder,
 		args,
-		impl.aF,
+		impl.aW,
+		impl.a2,
 		impl.a0,
-		impl.aY,
 		function() { return function() {} }
 	);
 });
@@ -2704,9 +2704,9 @@ var _VirtualDom_mapEventTuple = F2(function(func, tuple)
 var _VirtualDom_mapEventRecord = F2(function(func, record)
 {
 	return {
-		o: func(record.o),
-		J: record.J,
-		G: record.G
+		R: func(record.R),
+		al: record.al,
+		ai: record.ai
 	}
 });
 
@@ -2974,11 +2974,11 @@ function _VirtualDom_makeCallback(eventNode, initialHandler)
 		// 3 = Custom
 
 		var value = result.a;
-		var message = !tag ? value : tag < 3 ? value.a : value.o;
-		var stopPropagation = tag == 1 ? value.b : tag == 3 && value.J;
+		var message = !tag ? value : tag < 3 ? value.a : value.R;
+		var stopPropagation = tag == 1 ? value.b : tag == 3 && value.al;
 		var currentEventNode = (
 			stopPropagation && event.stopPropagation(),
-			(tag == 2 ? value.b : tag == 3 && value.G) && event.preventDefault(),
+			(tag == 2 ? value.b : tag == 3 && value.ai) && event.preventDefault(),
 			eventNode
 		);
 		var tagger;
@@ -3928,11 +3928,11 @@ var _Browser_element = _Debugger_element || F4(function(impl, flagDecoder, debug
 	return _Platform_initialize(
 		flagDecoder,
 		args,
-		impl.aF,
+		impl.aW,
+		impl.a2,
 		impl.a0,
-		impl.aY,
 		function(sendToApp, initialModel) {
-			var view = impl.a1;
+			var view = impl.a3;
 			/**/
 			var domNode = args['node'];
 			//*/
@@ -3964,12 +3964,12 @@ var _Browser_document = _Debugger_document || F4(function(impl, flagDecoder, deb
 	return _Platform_initialize(
 		flagDecoder,
 		args,
-		impl.aF,
+		impl.aW,
+		impl.a2,
 		impl.a0,
-		impl.aY,
 		function(sendToApp, initialModel) {
-			var divertHrefToApp = impl.H && impl.H(sendToApp)
-			var view = impl.a1;
+			var divertHrefToApp = impl.aj && impl.aj(sendToApp)
+			var view = impl.a3;
 			var title = _VirtualDom_doc.title;
 			var bodyNode = _VirtualDom_doc.body;
 			var currNode = _VirtualDom_virtualize(bodyNode);
@@ -3977,12 +3977,12 @@ var _Browser_document = _Debugger_document || F4(function(impl, flagDecoder, deb
 			{
 				_VirtualDom_divertHrefToApp = divertHrefToApp;
 				var doc = view(model);
-				var nextNode = _VirtualDom_node('body')(_List_Nil)(doc.au);
+				var nextNode = _VirtualDom_node('body')(_List_Nil)(doc.aP);
 				var patches = _VirtualDom_diff(currNode, nextNode);
 				bodyNode = _VirtualDom_applyPatches(bodyNode, currNode, patches, sendToApp);
 				currNode = nextNode;
 				_VirtualDom_divertHrefToApp = 0;
-				(title !== doc.a$) && (_VirtualDom_doc.title = title = doc.a$);
+				(title !== doc.a1) && (_VirtualDom_doc.title = title = doc.a1);
 			});
 		}
 	);
@@ -4038,12 +4038,12 @@ function _Browser_makeAnimator(model, draw)
 
 function _Browser_application(impl)
 {
-	var onUrlChange = impl.aN;
-	var onUrlRequest = impl.aO;
+	var onUrlChange = impl.aY;
+	var onUrlRequest = impl.aZ;
 	var key = function() { key.a(onUrlChange(_Browser_getUrl())); };
 
 	return _Browser_document({
-		H: function(sendToApp)
+		aj: function(sendToApp)
 		{
 			key.a = sendToApp;
 			_Browser_window.addEventListener('popstate', key);
@@ -4059,9 +4059,9 @@ function _Browser_application(impl)
 					var next = $elm$url$Url$fromString(href).a;
 					sendToApp(onUrlRequest(
 						(next
-							&& curr.aa === next.aa
-							&& curr.S === next.S
-							&& curr.Y.a === next.Y.a
+							&& curr.aC === next.aC
+							&& curr.at === next.at
+							&& curr.az.a === next.az.a
 						)
 							? $elm$browser$Browser$Internal(next)
 							: $elm$browser$Browser$External(href)
@@ -4069,13 +4069,13 @@ function _Browser_application(impl)
 				}
 			});
 		},
-		aF: function(flags)
+		aW: function(flags)
 		{
-			return A3(impl.aF, flags, _Browser_getUrl(), key);
+			return A3(impl.aW, flags, _Browser_getUrl(), key);
 		},
-		a1: impl.a1,
-		a0: impl.a0,
-		aY: impl.aY
+		a3: impl.a3,
+		a2: impl.a2,
+		a0: impl.a0
 	});
 }
 
@@ -4141,17 +4141,17 @@ var _Browser_decodeEvent = F2(function(decoder, event)
 function _Browser_visibilityInfo()
 {
 	return (typeof _VirtualDom_doc.hidden !== 'undefined')
-		? { aC: 'hidden', av: 'visibilitychange' }
+		? { aU: 'hidden', aQ: 'visibilitychange' }
 		:
 	(typeof _VirtualDom_doc.mozHidden !== 'undefined')
-		? { aC: 'mozHidden', av: 'mozvisibilitychange' }
+		? { aU: 'mozHidden', aQ: 'mozvisibilitychange' }
 		:
 	(typeof _VirtualDom_doc.msHidden !== 'undefined')
-		? { aC: 'msHidden', av: 'msvisibilitychange' }
+		? { aU: 'msHidden', aQ: 'msvisibilitychange' }
 		:
 	(typeof _VirtualDom_doc.webkitHidden !== 'undefined')
-		? { aC: 'webkitHidden', av: 'webkitvisibilitychange' }
-		: { aC: 'hidden', av: 'visibilitychange' };
+		? { aU: 'webkitHidden', aQ: 'webkitvisibilitychange' }
+		: { aU: 'hidden', aQ: 'visibilitychange' };
 }
 
 
@@ -4232,12 +4232,12 @@ var _Browser_call = F2(function(functionName, id)
 function _Browser_getViewport()
 {
 	return {
-		ag: _Browser_getScene(),
-		ak: {
-			am: _Browser_window.pageXOffset,
-			an: _Browser_window.pageYOffset,
-			al: _Browser_doc.documentElement.clientWidth,
-			R: _Browser_doc.documentElement.clientHeight
+		aG: _Browser_getScene(),
+		aJ: {
+			aL: _Browser_window.pageXOffset,
+			aM: _Browser_window.pageYOffset,
+			aK: _Browser_doc.documentElement.clientWidth,
+			as: _Browser_doc.documentElement.clientHeight
 		}
 	};
 }
@@ -4247,8 +4247,8 @@ function _Browser_getScene()
 	var body = _Browser_doc.body;
 	var elem = _Browser_doc.documentElement;
 	return {
-		al: Math.max(body.scrollWidth, body.offsetWidth, elem.scrollWidth, elem.offsetWidth, elem.clientWidth),
-		R: Math.max(body.scrollHeight, body.offsetHeight, elem.scrollHeight, elem.offsetHeight, elem.clientHeight)
+		aK: Math.max(body.scrollWidth, body.offsetWidth, elem.scrollWidth, elem.offsetWidth, elem.clientWidth),
+		as: Math.max(body.scrollHeight, body.offsetHeight, elem.scrollHeight, elem.offsetHeight, elem.clientHeight)
 	};
 }
 
@@ -4271,15 +4271,15 @@ function _Browser_getViewportOf(id)
 	return _Browser_withNode(id, function(node)
 	{
 		return {
-			ag: {
-				al: node.scrollWidth,
-				R: node.scrollHeight
+			aG: {
+				aK: node.scrollWidth,
+				as: node.scrollHeight
 			},
-			ak: {
-				am: node.scrollLeft,
-				an: node.scrollTop,
-				al: node.clientWidth,
-				R: node.clientHeight
+			aJ: {
+				aL: node.scrollLeft,
+				aM: node.scrollTop,
+				aK: node.clientWidth,
+				as: node.clientHeight
 			}
 		};
 	});
@@ -4309,18 +4309,18 @@ function _Browser_getElement(id)
 		var x = _Browser_window.pageXOffset;
 		var y = _Browser_window.pageYOffset;
 		return {
-			ag: _Browser_getScene(),
-			ak: {
-				am: x,
-				an: y,
-				al: _Browser_doc.documentElement.clientWidth,
-				R: _Browser_doc.documentElement.clientHeight
+			aG: _Browser_getScene(),
+			aJ: {
+				aL: x,
+				aM: y,
+				aK: _Browser_doc.documentElement.clientWidth,
+				as: _Browser_doc.documentElement.clientHeight
 			},
-			ay: {
-				am: x + rect.left,
-				an: y + rect.top,
-				al: rect.width,
-				R: rect.height
+			aS: {
+				aL: x + rect.left,
+				aM: y + rect.top,
+				aK: rect.width,
+				as: rect.height
 			}
 		};
 	});
@@ -4439,10 +4439,130 @@ var $elm$core$Basics$True = 0;
 var $author$project$Data$dataModel = _List_fromArray(
 	[
 		{
-		ar: {aq: 0, at: 0, M: 0, aG: 0, aH: 0, aI: 0, aK: 0, ab: 0, aS: 0, af: 0, aW: 0, aX: 0, aj: 0, aZ: 0, ap: 0},
-		aw: true,
-		aD: {M: 0, aA: 0, aB: 0, aJ: 0, aL: 0, aQ: 0, ab: 0, aT: 0, af: 0, aU: 0, aj: 0, a_: 0, a2: 0, a3: 0, ap: 0},
-		aV: 'Unknown'
+		g: {f: 10580, h: 17020, a: 40540, m: 6640, n: 18410, o: 120800, q: 14880, b: 9700, t: 4340, c: 213600, x: 147500, y: 7260, d: 22870, z: 24000, e: 17000},
+		i: true,
+		l: {a: 27020, j: 6100, k: 17010, p: 151220, r: 17240, s: 30280, b: 18060, u: 42500, c: 384180, v: 6540, d: 33510, A: 10040, B: 2280, C: 44680, e: 17000},
+		w: 'Smolderweb'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 88740, m: 28000, n: 108710, o: 413660, q: 94780, b: 26000, t: 18580, c: 400000, x: 509040, y: 28100, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 38600, j: 7080, k: 33880, p: 170540, r: 18000, s: 49560, b: 15840, u: 60000, c: 356880, v: 10000, d: 57990, A: 21740, B: 6200, C: 117880, e: 17000},
+		w: 'Atiesh'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 134080, o: 513260, q: 89590, b: 26000, t: 20000, c: 400000, x: 534260, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 41420, j: 6240, k: 26770, p: 124720, r: 18000, s: 41260, b: 17340, u: 60000, c: 279460, v: 4500, d: 46800, A: 22000, B: 1660, C: 112300, e: 17000},
+		w: 'Ashkandi'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 87120, m: 27760, n: 104340, o: 293980, q: 77890, b: 26000, t: 20000, c: 400000, x: 305940, y: 30520, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 42860, j: 11320, k: 48250, p: 149860, r: 18000, s: 74240, b: 15320, u: 60000, c: 321080, v: 10000, d: 54550, A: 17700, B: 5940, C: 93540, e: 16480},
+		w: 'Azuresong'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 102960, o: 464500, q: 83460, b: 26000, t: 20000, c: 400000, x: 582540, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 54020, j: 10660, k: 33940, p: 208400, r: 18000, s: 55200, b: 20100, u: 39700, c: 278540, v: 10000, d: 50350, A: 22000, B: 7380, C: 243920, e: 17000},
+		w: 'Heartseeker'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 36780, m: 14580, n: 43060, o: 216900, q: 38690, b: 18080, t: 11580, c: 389460, x: 333700, y: 33000, d: 56270, z: 24000, e: 17000},
+		i: true,
+		l: {a: 53460, j: 10160, k: 27430, p: 250000, r: 18000, s: 60080, b: 26000, u: 54630, c: 400000, v: 10000, d: 79680, A: 18320, B: 7980, C: 104600, e: 17000},
+		w: 'Kurinnaxx'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 52000, m: 17200, n: 56700, o: 235120, q: 48720, b: 26000, t: 10800, c: 400000, x: 408540, y: 14500, d: 58380, z: 24000, e: 17000},
+		i: true,
+		l: {a: 31140, j: 5320, k: 22630, p: 214900, r: 18000, s: 35120, b: 17940, u: 54260, c: 400000, v: 10000, d: 45490, A: 14560, B: 5100, C: 75560, e: 17000},
+		w: 'Grobbulus'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 521020, q: 103270, b: 26000, t: 20000, c: 400000, x: 484860, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 12840, k: 60000, p: 172980, r: 18000, s: 91520, b: 26000, u: 60000, c: 349020, v: 10000, d: 80000, A: 22000, B: 9360, C: 217180, e: 17000},
+		w: 'Old Blanchy'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 25540, n: 89710, o: 261620, q: 65230, b: 23440, t: 13560, c: 400000, x: 290980, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 35860, j: 8220, k: 24540, p: 124260, r: 18000, s: 48780, b: 11680, u: 60000, c: 253940, v: 10000, d: 43070, A: 19240, B: 3880, C: 101360, e: 17000},
+		w: 'Bloodsail Buccaneers'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 110390, o: 417540, q: 79000, b: 26000, t: 20000, c: 400000, x: 530980, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 60040, j: 11880, k: 38450, p: 177960, r: 18000, s: 58400, b: 17960, u: 60000, c: 400000, v: 10000, d: 49340, A: 16920, B: 6500, C: 102920, e: 17000},
+		w: 'Myzrael'
+	},
+		{
+		g: {f: 10720, h: 20000, a: 30520, m: 13220, n: 49120, o: 207820, q: 22170, b: 19300, t: 7600, c: 400000, x: 278140, y: 11760, d: 30370, z: 24000, e: 16060},
+		i: true,
+		l: {a: 53780, j: 7740, k: 32230, p: 250000, r: 18000, s: 51100, b: 26000, u: 60000, c: 400000, v: 10000, d: 50910, A: 18280, B: 10000, C: 111700, e: 17000},
+		w: 'Fairbanks'
+	},
+		{
+		g: {f: 10720, h: 9600, a: 18860, m: 14160, n: 29380, o: 177980, q: 19820, b: 8020, t: 7160, c: 166820, x: 149220, y: 11380, d: 33070, z: 24000, e: 11940},
+		i: true,
+		l: {a: 10900, j: 3500, k: 13140, p: 79720, r: 9300, s: 14940, b: 7160, u: 19450, c: 137700, v: 9320, d: 19610, A: 3260, B: 3120, C: 36440, e: 17000},
+		w: 'Anathema'
+	},
+		{
+		g: {f: 13080, h: 20000, a: 22860, m: 14600, n: 26610, o: 122740, q: 26970, b: 25440, t: 7000, c: 400000, x: 269440, y: 13380, d: 38270, z: 24000, e: 17000},
+		i: true,
+		l: {a: 35580, j: 12440, k: 29890, p: 194740, r: 18000, s: 44740, b: 23440, u: 60000, c: 400000, v: 10000, d: 65850, A: 17560, B: 5220, C: 72400, e: 17000},
+		w: 'Rattlegore'
+	},
+		{
+		g: {f: 2080, h: 5160, a: 2540, m: 6480, n: 32930, o: 97260, q: 13260, b: 140, t: 4600, c: 12240, x: 111600, y: 3260, d: 10720, z: 23040, e: 120},
+		i: true,
+		l: {a: 45720, j: 13920, k: 34360, p: 161240, r: 18000, s: 44340, b: 24020, u: 55890, c: 287540, v: 9980, d: 68120, A: 14800, B: 5800, C: 73260, e: 17000},
+		w: 'Thalnos'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 85060, m: 26220, n: 161840, o: 630600, q: 89010, b: 26000, t: 20000, c: 400000, x: 451760, y: 33000, d: 63220, z: 24000, e: 17000},
+		i: true,
+		l: {a: 69780, j: 13420, k: 43150, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 65970, A: 22000, B: 10000, C: 223700, e: 17000},
+		w: 'Whitemane'
+	},
+		{
+		g: {f: 14000, h: 13340, a: 26200, m: 9080, n: 26420, o: 95740, q: 23900, b: 10940, t: 7620, c: 222880, x: 187360, y: 9720, d: 19980, z: 24000, e: 17000},
+		i: true,
+		l: {a: 12400, j: 4220, k: 11490, p: 79960, r: 13240, s: 17100, b: 9580, u: 19690, c: 138120, v: 10000, d: 24830, A: 5220, B: 2480, C: 45820, e: 10100},
+		w: 'Deviate Delight'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 38200, m: 13900, n: 51750, o: 262260, q: 31230, b: 26000, t: 11760, c: 400000, x: 334460, y: 21280, d: 56470, z: 24000, e: 17000},
+		i: true,
+		l: {a: 58540, j: 14020, k: 38440, p: 250000, r: 18000, s: 62480, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 19300, B: 10000, C: 124580, e: 17000},
+		w: 'Bigglesworth'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 33400, m: 10140, n: 41570, o: 165200, q: 22420, b: 20820, t: 9220, c: 335160, x: 197140, y: 10080, d: 31600, z: 24000, e: 17000},
+		i: true,
+		l: {a: 31120, j: 6760, k: 17580, p: 152600, r: 18000, s: 31060, b: 22920, u: 39850, c: 400000, v: 5000, d: 45750, A: 13880, B: 5660, C: 62020, e: 17000},
+		w: 'Blaumeux'
+	},
+		{
+		g: {f: 14000, h: 15420, a: 34860, m: 11240, n: 22790, o: 80900, q: 24900, b: 9380, t: 10580, c: 209020, x: 116200, y: 11720, d: 50990, z: 24000, e: 17000},
+		i: true,
+		l: {a: 7760, j: 6620, k: 16170, p: 47860, r: 12360, s: 21400, b: 3580, u: 19860, c: 29980, v: 4140, d: 11610, A: 5400, B: 1380, C: 42360, e: 17000},
+		w: 'Arcanite Reaper'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 68760, m: 24360, n: 107580, o: 537780, q: 50910, b: 25520, t: 20000, c: 400000, x: 535080, y: 28560, d: 69030, z: 24000, e: 17000},
+		i: true,
+		l: {a: 75320, j: 19000, k: 52260, p: 250000, r: 18000, s: 90380, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 219720, e: 17000},
+		w: 'Thunderfury'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 69940, m: 19940, n: 85680, o: 388420, q: 60010, b: 16220, t: 13680, c: 400000, x: 341380, y: 19560, d: 46080, z: 24000, e: 17000},
+		i: true,
+		l: {a: 78620, j: 13440, k: 43650, p: 250000, r: 18000, s: 67980, b: 26000, u: 60000, c: 400000, v: 10000, d: 58870, A: 22000, B: 8660, C: 150240, e: 17000},
+		w: 'Kirtonos'
 	}
 	]);
 var $elm$core$Result$Err = function (a) {
@@ -4771,25 +4891,25 @@ var $elm$core$Array$treeFromBuilder = F2(
 	});
 var $elm$core$Array$builderToArray = F2(
 	function (reverseNodeList, builder) {
-		if (!builder.a) {
+		if (!builder.D) {
 			return A4(
 				$elm$core$Array$Array_elm_builtin,
-				$elm$core$Elm$JsArray$length(builder.c),
+				$elm$core$Elm$JsArray$length(builder.F),
 				$elm$core$Array$shiftStep,
 				$elm$core$Elm$JsArray$empty,
-				builder.c);
+				builder.F);
 		} else {
-			var treeLen = builder.a * $elm$core$Array$branchFactor;
+			var treeLen = builder.D * $elm$core$Array$branchFactor;
 			var depth = $elm$core$Basics$floor(
 				A2($elm$core$Basics$logBase, $elm$core$Array$branchFactor, treeLen - 1));
-			var correctNodeList = reverseNodeList ? $elm$core$List$reverse(builder.d) : builder.d;
-			var tree = A2($elm$core$Array$treeFromBuilder, correctNodeList, builder.a);
+			var correctNodeList = reverseNodeList ? $elm$core$List$reverse(builder.G) : builder.G;
+			var tree = A2($elm$core$Array$treeFromBuilder, correctNodeList, builder.D);
 			return A4(
 				$elm$core$Array$Array_elm_builtin,
-				$elm$core$Elm$JsArray$length(builder.c) + treeLen,
+				$elm$core$Elm$JsArray$length(builder.F) + treeLen,
 				A2($elm$core$Basics$max, 5, depth * $elm$core$Array$shiftStep),
 				tree,
-				builder.c);
+				builder.F);
 		}
 	});
 var $elm$core$Basics$idiv = _Basics_idiv;
@@ -4802,7 +4922,7 @@ var $elm$core$Array$initializeHelp = F5(
 				return A2(
 					$elm$core$Array$builderToArray,
 					false,
-					{d: nodeList, a: (len / $elm$core$Array$branchFactor) | 0, c: tail});
+					{G: nodeList, D: (len / $elm$core$Array$branchFactor) | 0, F: tail});
 			} else {
 				var leaf = $elm$core$Array$Leaf(
 					A3($elm$core$Elm$JsArray$initialize, $elm$core$Array$branchFactor, fromIndex, fn));
@@ -4868,7 +4988,7 @@ var $elm$url$Url$Http = 0;
 var $elm$url$Url$Https = 1;
 var $elm$url$Url$Url = F6(
 	function (protocol, host, port_, path, query, fragment) {
-		return {Q: fragment, S: host, W: path, Y: port_, aa: protocol, ac: query};
+		return {ar: fragment, at: host, ax: path, az: port_, aC: protocol, aD: query};
 	});
 var $elm$core$String$contains = _String_contains;
 var $elm$core$String$length = _String_length;
@@ -5153,29 +5273,43 @@ var $elm$core$Platform$Sub$none = $elm$core$Platform$Sub$batch(_List_Nil);
 var $elm$browser$Browser$sandbox = function (impl) {
 	return _Browser_element(
 		{
-			aF: function (_v0) {
-				return _Utils_Tuple2(impl.aF, $elm$core$Platform$Cmd$none);
+			aW: function (_v0) {
+				return _Utils_Tuple2(impl.aW, $elm$core$Platform$Cmd$none);
 			},
-			aY: function (_v1) {
+			a0: function (_v1) {
 				return $elm$core$Platform$Sub$none;
 			},
-			a0: F2(
+			a2: F2(
 				function (msg, model) {
 					return _Utils_Tuple2(
-						A2(impl.a0, msg, model),
+						A2(impl.a2, msg, model),
 						$elm$core$Platform$Cmd$none);
 				}),
-			a1: impl.a1
+			a3: impl.a3
 		});
+};
+var $elm$core$List$sortBy = _List_sortBy;
+var $author$project$Main$sumAllianceMats = function (mats) {
+	return (((((((((((((mats.c + mats.x) + mats.o) + mats.e) + mats.f) + mats.t) + mats.b) + mats.y) + mats.h) + mats.z) + mats.m) + mats.a) + mats.d) + mats.q) + mats.n;
+};
+var $author$project$Main$sumHordeMats = function (mats) {
+	return (((((((((((((mats.c + mats.p) + mats.C) + mats.v) + mats.e) + mats.B) + mats.j) + mats.b) + mats.s) + mats.r) + mats.A) + mats.a) + mats.u) + mats.d) + mats.k;
+};
+var $author$project$Main$sumAllMats = function (model) {
+	return $author$project$Main$sumAllianceMats(model.g) + $author$project$Main$sumHordeMats(model.l);
+};
+var $author$project$Main$sortData = function (model) {
+	return $elm$core$List$reverse(
+		A2($elm$core$List$sortBy, $author$project$Main$sumAllMats, model));
 };
 var $elm$core$Basics$not = _Basics_not;
 var $author$project$Main$update = F2(
 	function (msg, model) {
 		var serverName = msg;
 		var updateServerCollapseState = function (s) {
-			return _Utils_eq(s.aV, serverName) ? _Utils_update(
+			return _Utils_eq(s.w, serverName) ? _Utils_update(
 				s,
-				{aw: !s.aw}) : s;
+				{i: !s.i}) : s;
 		};
 		var newModel = A2($elm$core$List$map, updateServerCollapseState, model);
 		return newModel;
@@ -5249,15 +5383,6 @@ var $elm$html$Html$Events$onClick = function (msg) {
 		$elm$json$Json$Decode$succeed(msg));
 };
 var $elm$core$Basics$round = _Basics_round;
-var $author$project$Main$sumAllianceMats = function (mats) {
-	return (((((((((((((mats.af + mats.aW) + mats.aI) + mats.ap) + mats.aq) + mats.aS) + mats.ab) + mats.aX) + mats.at) + mats.aZ) + mats.aG) + mats.M) + mats.aj) + mats.aK) + mats.aH;
-};
-var $author$project$Main$sumHordeMats = function (mats) {
-	return (((((((((((((mats.af + mats.aJ) + mats.a3) + mats.aU) + mats.ap) + mats.a2) + mats.aA) + mats.ab) + mats.aQ) + mats.aL) + mats.a_) + mats.M) + mats.aT) + mats.aj) + mats.aB;
-};
-var $author$project$Main$sumAllMats = function (model) {
-	return $author$project$Main$sumAllianceMats(model.ar) + $author$project$Main$sumHordeMats(model.aD);
-};
 var $author$project$Main$viewCategoryBottom = A2(
 	$elm$html$Html$table,
 	_List_fromArray(
@@ -5727,7 +5852,10 @@ var $author$project$Main$viewSpecificServerDataRow = F3(
 	function (materialName, materialCurrent, materialMaximum) {
 		var percentComplete = (_Utils_cmp(materialCurrent, materialMaximum) < 0) ? ((materialCurrent / materialMaximum) * 100.0) : 100.0;
 		var barWidth = $elm$core$Basics$round((percentComplete / 100.0) * 150);
-		var styleStr = 'width: ' + ($elm$core$String$fromInt(barWidth) + '; background: url(images/greenbar.gif);');
+		var styleStr = function () {
+			var imageSrc = (_Utils_cmp(materialCurrent, (materialMaximum / 2) | 0) < 0) ? 'redbar.gif' : ((_Utils_cmp(materialCurrent, materialMaximum) < 0) ? 'yellowbar.gif' : 'greenbar.gif');
+			return 'width: ' + ($elm$core$String$fromInt(barWidth) + ('; background: url(images/' + (imageSrc + ');')));
+		}();
 		return A2(
 			$elm$html$Html$table,
 			_List_fromArray(
@@ -5897,18 +6025,6 @@ var $author$project$Main$viewSpecificServerDataRow = F3(
 						]))
 				]));
 	});
-var $elm$core$String$cons = _String_cons;
-var $elm$core$String$fromChar = function (_char) {
-	return A2($elm$core$String$cons, _char, '');
-};
-var $author$project$Main$viewStringTripleSpace = function () {
-	var noBreakSpace = '\u00A0';
-	return _Utils_ap(
-		$elm$core$String$fromChar(noBreakSpace),
-		_Utils_ap(
-			$elm$core$String$fromChar(noBreakSpace),
-			$elm$core$String$fromChar(noBreakSpace)));
-}();
 var $author$project$Main$viewSpecificServerData = function (model) {
 	return A2(
 		$elm$html$Html$div,
@@ -5942,181 +6058,6 @@ var $author$project$Main$viewSpecificServerData = function (model) {
 											[
 												A2(
 												$elm$html$Html$td,
-												_List_fromArray(
-													[
-														$elm$html$Html$Attributes$align('right'),
-														A2($elm$html$Html$Attributes$attribute, 'background', 'images/statusbar.jpg'),
-														A2($elm$html$Html$Attributes$attribute, 'height', '18')
-													]),
-												_List_fromArray(
-													[
-														A2(
-														$elm$html$Html$table,
-														_List_fromArray(
-															[
-																A2($elm$html$Html$Attributes$attribute, 'border', '0'),
-																A2($elm$html$Html$Attributes$attribute, 'cellpadding', '0'),
-																A2($elm$html$Html$Attributes$attribute, 'cellspacing', '0')
-															]),
-														_List_fromArray(
-															[
-																A2(
-																$elm$html$Html$tbody,
-																_List_Nil,
-																_List_fromArray(
-																	[
-																		A2(
-																		$elm$html$Html$tr,
-																		_List_Nil,
-																		_List_fromArray(
-																			[
-																				A2(
-																				$elm$html$Html$td,
-																				_List_Nil,
-																				_List_fromArray(
-																					[
-																						$elm$html$Html$text('Resource Status:  ')
-																					])),
-																				A2(
-																				$elm$html$Html$td,
-																				_List_Nil,
-																				_List_fromArray(
-																					[
-																						A2(
-																						$elm$html$Html$div,
-																						_List_fromArray(
-																							[
-																								A2($elm$html$Html$Attributes$attribute, 'style', 'top: -2;')
-																							]),
-																						_List_fromArray(
-																							[
-																								A2(
-																								$elm$html$Html$img,
-																								_List_fromArray(
-																									[
-																										$elm$html$Html$Attributes$src('images/status_supplies_green.gif')
-																									]),
-																								_List_Nil)
-																							]))
-																					])),
-																				A2(
-																				$elm$html$Html$td,
-																				_List_Nil,
-																				_List_fromArray(
-																					[
-																						$elm$html$Html$text($author$project$Main$viewStringTripleSpace),
-																						A2(
-																						$elm$html$Html$b,
-																						_List_Nil,
-																						_List_fromArray(
-																							[
-																								$elm$html$Html$text('Completed')
-																							])),
-																						$elm$html$Html$text($author$project$Main$viewStringTripleSpace)
-																					]))
-																			]))
-																	]))
-															]))
-													])),
-												A2($elm$html$Html$td, _List_Nil, _List_Nil),
-												A2(
-												$elm$html$Html$td,
-												_List_fromArray(
-													[
-														A2($elm$html$Html$Attributes$attribute, 'background', 'images/statusbar.jpg'),
-														A2($elm$html$Html$Attributes$attribute, 'height', '18')
-													]),
-												_List_fromArray(
-													[
-														A2(
-														$elm$html$Html$table,
-														_List_fromArray(
-															[
-																A2($elm$html$Html$Attributes$attribute, 'border', '0'),
-																A2($elm$html$Html$Attributes$attribute, 'cellpadding', '0'),
-																A2($elm$html$Html$Attributes$attribute, 'cellspacing', '0')
-															]),
-														_List_fromArray(
-															[
-																A2(
-																$elm$html$Html$tbody,
-																_List_Nil,
-																_List_fromArray(
-																	[
-																		A2(
-																		$elm$html$Html$tr,
-																		_List_Nil,
-																		_List_fromArray(
-																			[
-																				A2(
-																				$elm$html$Html$td,
-																				_List_Nil,
-																				_List_fromArray(
-																					[
-																						$elm$html$Html$text($author$project$Main$viewStringTripleSpace + 'Gate Status:  ')
-																					])),
-																				A2(
-																				$elm$html$Html$td,
-																				_List_Nil,
-																				_List_fromArray(
-																					[
-																						A2(
-																						$elm$html$Html$img,
-																						_List_fromArray(
-																							[
-																								$elm$html$Html$Attributes$src('images/status_gate_red.gif')
-																							]),
-																						_List_Nil)
-																					])),
-																				A2(
-																				$elm$html$Html$td,
-																				_List_Nil,
-																				_List_fromArray(
-																					[
-																						$elm$html$Html$text($author$project$Main$viewStringTripleSpace),
-																						A2(
-																						$elm$html$Html$b,
-																						_List_Nil,
-																						_List_fromArray(
-																							[
-																								$elm$html$Html$text('Closed')
-																							]))
-																					]))
-																			]))
-																	]))
-															]))
-													]))
-											])),
-										A2(
-										$elm$html$Html$tr,
-										_List_Nil,
-										_List_fromArray(
-											[
-												A2(
-												$elm$html$Html$td,
-												_List_fromArray(
-													[
-														A2($elm$html$Html$Attributes$attribute, 'colspan', '3')
-													]),
-												_List_fromArray(
-													[
-														A2(
-														$elm$html$Html$img,
-														_List_fromArray(
-															[
-																A2($elm$html$Html$Attributes$attribute, 'height', '5'),
-																$elm$html$Html$Attributes$src('images/pixel.gif')
-															]),
-														_List_Nil)
-													]))
-											])),
-										A2(
-										$elm$html$Html$tr,
-										_List_Nil,
-										_List_fromArray(
-											[
-												A2(
-												$elm$html$Html$td,
 												_List_Nil,
 												_List_fromArray(
 													[
@@ -6129,45 +6070,45 @@ var $author$project$Main$viewSpecificServerData = function (model) {
 														_List_Nil),
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Bandages'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Runecloth Bandages', model.ar.af, 400000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Silk Bandages', model.ar.aW, 600000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Linen Bandages', model.ar.aI, 800000),
-														A3($author$project$Main$viewCategoryTotal, 'Bandages Total', (model.ar.af + model.ar.aW) + model.ar.aI, 1800000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Runecloth Bandages', model.g.c, 400000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Silk Bandages', model.g.x, 600000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Linen Bandages', model.g.o, 800000),
+														A3($author$project$Main$viewCategoryTotal, 'Bandages Total', (model.g.c + model.g.x) + model.g.o, 1800000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Cooking'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Spotted Yellowtail', model.ar.ap, 17000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Rainbow Fin Albacore', model.ar.aq, 14000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Roast Raptor', model.ar.aS, 20000),
-														A3($author$project$Main$viewCategoryTotal, 'Cooking Total', (model.ar.ap + model.ar.aq) + model.ar.aS, 51000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Spotted Yellowtail', model.g.e, 17000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Rainbow Fin Albacore', model.g.f, 14000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Roast Raptor', model.g.t, 20000),
+														A3($author$project$Main$viewCategoryTotal, 'Cooking Total', (model.g.e + model.g.f) + model.g.t, 51000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Herbs'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Purple Lotus', model.ar.ab, 26000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Stranglekelp', model.ar.aX, 33000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Arthas\' Tear', model.ar.at, 20000),
-														A3($author$project$Main$viewCategoryTotal, 'Herbs Total', (model.ar.ab + model.ar.aX) + model.ar.at, 79000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Purple Lotus', model.g.b, 26000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Stranglekelp', model.g.y, 33000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Arthas\' Tear', model.g.h, 20000),
+														A3($author$project$Main$viewCategoryTotal, 'Herbs Total', (model.g.b + model.g.y) + model.g.h, 79000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Bars'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Thorium Bars', model.ar.aZ, 24000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Iron Bars', model.ar.aG, 28000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Copper Bars', model.ar.M, 90000),
-														A3($author$project$Main$viewCategoryTotal, 'Bars Total', (model.ar.aZ + model.ar.aG) + model.ar.M, 142000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Thorium Bars', model.g.z, 24000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Iron Bars', model.g.m, 28000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Copper Bars', model.g.a, 90000),
+														A3($author$project$Main$viewCategoryTotal, 'Bars Total', (model.g.z + model.g.m) + model.g.a, 142000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Skins'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Thick Leather', model.ar.aj, 80000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Medium Leather', model.ar.aK, 110000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Light Leather', model.ar.aH, 180000),
-														A3($author$project$Main$viewCategoryTotal, 'Skins Total', (model.ar.aj + model.ar.aK) + model.ar.aH, 370000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Thick Leather', model.g.d, 80000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Medium Leather', model.g.q, 110000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Light Leather', model.g.n, 180000),
+														A3($author$project$Main$viewCategoryTotal, 'Skins Total', (model.g.d + model.g.q) + model.g.n, 370000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Alliance Total'),
 														A3(
 														$author$project$Main$viewCategoryTotal,
 														'Alliance Total',
-														$author$project$Main$sumAllianceMats(model.ar),
+														$author$project$Main$sumAllianceMats(model.g),
 														2442000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
@@ -6201,45 +6142,45 @@ var $author$project$Main$viewSpecificServerData = function (model) {
 														_List_Nil),
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Bandages'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Runecloth Bandages', model.aD.af, 400000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Mageweave Bandages', model.aD.aJ, 250000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Wool Bandages', model.aD.a3, 250000),
-														A3($author$project$Main$viewCategoryTotal, 'Bandages Total', (model.aD.af + model.aD.aJ) + model.aD.a3, 900000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Runecloth Bandages', model.l.c, 400000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Mageweave Bandages', model.l.p, 250000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Wool Bandages', model.l.C, 250000),
+														A3($author$project$Main$viewCategoryTotal, 'Bandages Total', (model.l.c + model.l.p) + model.l.C, 900000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Cooking'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Baked Salmon', model.aD.aU, 10000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Spotted Yellowtail', model.aD.ap, 17000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Lean Wolf Steak', model.aD.a2, 10000),
-														A3($author$project$Main$viewCategoryTotal, 'Cooking Total', (model.aD.aU + model.aD.ap) + model.aD.a2, 37000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Baked Salmon', model.l.v, 10000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Spotted Yellowtail', model.l.e, 17000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Lean Wolf Steak', model.l.B, 10000),
+														A3($author$project$Main$viewCategoryTotal, 'Cooking Total', (model.l.v + model.l.e) + model.l.B, 37000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Herbs'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Firebloom', model.aD.aA, 19000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Purple Lotus', model.aD.ab, 26000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Peacebloom', model.aD.aQ, 96000),
-														A3($author$project$Main$viewCategoryTotal, 'Herbs Total', (model.aD.aA + model.aD.ab) + model.aD.aQ, 141000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Firebloom', model.l.j, 19000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Purple Lotus', model.l.b, 26000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Peacebloom', model.l.s, 96000),
+														A3($author$project$Main$viewCategoryTotal, 'Herbs Total', (model.l.j + model.l.b) + model.l.s, 141000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Bars'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Mithril Bars', model.aD.aL, 18000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Tin Bars', model.aD.a_, 22000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Copper Bars', model.aD.M, 90000),
-														A3($author$project$Main$viewCategoryTotal, 'Bars Total', (model.aD.aL + model.aD.a_) + model.aD.M, 130000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Mithril Bars', model.l.r, 18000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Tin Bars', model.l.A, 22000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Copper Bars', model.l.a, 90000),
+														A3($author$project$Main$viewCategoryTotal, 'Bars Total', (model.l.r + model.l.A) + model.l.a, 130000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Skins'),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Rugged Leather', model.aD.aT, 60000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Thick Leather', model.aD.aj, 80000),
-														A3($author$project$Main$viewSpecificServerDataRow, 'Heavy Leather', model.aD.aB, 60000),
-														A3($author$project$Main$viewCategoryTotal, 'Skins Total', (model.aD.aT + model.aD.aj) + model.aD.aB, 200000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Rugged Leather', model.l.u, 60000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Thick Leather', model.l.d, 80000),
+														A3($author$project$Main$viewSpecificServerDataRow, 'Heavy Leather', model.l.k, 60000),
+														A3($author$project$Main$viewCategoryTotal, 'Skins Total', (model.l.u + model.l.d) + model.l.k, 200000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$author$project$Main$viewCategoryHeader('Horde Total'),
 														A3(
 														$author$project$Main$viewCategoryTotal,
 														'Horde Total',
-														$author$project$Main$sumHordeMats(model.aD),
+														$author$project$Main$sumHordeMats(model.l),
 														1408000),
 														$author$project$Main$viewCategoryBottom,
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
@@ -6268,11 +6209,23 @@ var $author$project$Main$viewSpecificServerData = function (model) {
 					]))
 			]));
 };
+var $elm$core$String$cons = _String_cons;
+var $elm$core$String$fromChar = function (_char) {
+	return A2($elm$core$String$cons, _char, '');
+};
+var $author$project$Main$viewStringTripleSpace = function () {
+	var noBreakSpace = '\u00A0';
+	return _Utils_ap(
+		$elm$core$String$fromChar(noBreakSpace),
+		_Utils_ap(
+			$elm$core$String$fromChar(noBreakSpace),
+			$elm$core$String$fromChar(noBreakSpace)));
+}();
 var $author$project$Main$viewServerOverview = function (model) {
 	var maxSum = 3850000;
 	var currentSum = $author$project$Main$sumAllMats(model);
 	var percentComplete = (_Utils_cmp(currentSum, maxSum) < 0) ? ((currentSum / maxSum) * 100.0) : 100.0;
-	var collapsedAttr = model.aw ? 'display:none;' : 'display:table-row;';
+	var collapsedAttr = model.i ? 'display:none;' : 'display:table-row;';
 	var barWidth = $elm$core$Basics$round((percentComplete / 100.0) * 308);
 	var styleStr = 'width: ' + ($elm$core$String$fromInt(barWidth) + '; background: url(images/tealbar.gif);');
 	return A2(
@@ -6349,11 +6302,11 @@ var $author$project$Main$viewServerOverview = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Attributes$href('#'),
-												$elm$html$Html$Events$onClick(model.aV)
+												$elm$html$Html$Events$onClick(model.w)
 											]),
 										_List_fromArray(
 											[
-												$elm$html$Html$text(model.aV)
+												$elm$html$Html$text(model.w)
 											]))
 									])),
 								A2(
@@ -6449,7 +6402,7 @@ var $author$project$Main$viewServerOverview = function (model) {
 										$elm$html$Html$img,
 										_List_fromArray(
 											[
-												$elm$html$Html$Attributes$src('images/supplies_green.gif')
+												$elm$html$Html$Attributes$src('images/supplies_gray.gif')
 											]),
 										_List_Nil)
 									])),
@@ -6472,7 +6425,7 @@ var $author$project$Main$viewServerOverview = function (model) {
 										$elm$html$Html$img,
 										_List_fromArray(
 											[
-												$elm$html$Html$Attributes$src('images/gate_green.gif')
+												$elm$html$Html$Attributes$src('images/gate_gray.gif')
 											]),
 										_List_Nil)
 									])),
@@ -6485,6 +6438,42 @@ var $author$project$Main$viewServerOverview = function (model) {
 								_List_fromArray(
 									[
 										$elm$html$Html$text('--')
+									]))
+							])),
+						A2(
+						$elm$html$Html$tr,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$td,
+								_List_fromArray(
+									[
+										A2($elm$html$Html$Attributes$attribute, 'colspan', '3')
+									]),
+								_List_fromArray(
+									[
+										A2(
+										$elm$html$Html$div,
+										_List_fromArray(
+											[
+												A2($elm$html$Html$Attributes$attribute, 'style', 'position: relative; top: -18; left: 350;')
+											]),
+										_List_fromArray(
+											[
+												A2(
+												$elm$html$Html$div,
+												_List_fromArray(
+													[
+														A2($elm$html$Html$Attributes$attribute, 'style', 'position: absolute;')
+													]),
+												_List_fromArray(
+													[
+														$elm$html$Html$text(
+														$elm$core$String$fromInt(
+															$elm$core$Basics$round(percentComplete)) + '%')
+													]))
+											]))
 									]))
 							])),
 						A2(
@@ -6906,7 +6895,7 @@ var $author$project$Main$view = function (model) {
 												_List_fromArray(
 													[
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
-														$elm$html$Html$text('Recreated by: Deceit - Rattlegore-US (drivehappy@gmail.com)'),
+														$elm$html$Html$text('Recreated by Deceit - Rattlegore-US (drivehappy@gmail.com)'),
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$elm$html$Html$text('World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of'),
@@ -7002,6 +6991,10 @@ var $author$project$Main$view = function (model) {
 			]));
 };
 var $author$project$Main$main = $elm$browser$Browser$sandbox(
-	{aF: $author$project$Data$dataModel, a0: $author$project$Main$update, a1: $author$project$Main$view});
+	{
+		aW: $author$project$Main$sortData($author$project$Data$dataModel),
+		a2: $author$project$Main$update,
+		a3: $author$project$Main$view
+	});
 _Platform_export({'Main':{'init':$author$project$Main$main(
 	$elm$json$Json$Decode$succeed(0))(0)}});}(this));
