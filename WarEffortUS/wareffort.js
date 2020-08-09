@@ -4439,130 +4439,250 @@ var $elm$core$Basics$True = 0;
 var $author$project$Data$dataModel = _List_fromArray(
 	[
 		{
-		g: {f: 10580, h: 17020, a: 40540, m: 6640, n: 18410, o: 120800, q: 14880, b: 9700, t: 4340, c: 213600, x: 147500, y: 7260, d: 22870, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 90000, m: 27960, n: 178230, o: 800000, q: 110000, b: 26000, t: 20000, c: 387460, x: 600000, y: 33000, d: 76720, z: 24000, e: 17000},
 		i: true,
-		l: {a: 27020, j: 6100, k: 17010, p: 151220, r: 17240, s: 30280, b: 18060, u: 42500, c: 384180, v: 6540, d: 33510, A: 10040, B: 2280, C: 44680, e: 17000},
-		w: 'Smolderweb'
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Stalagg'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 88740, m: 28000, n: 108710, o: 413660, q: 94780, b: 26000, t: 18580, c: 400000, x: 509040, y: 28100, d: 80000, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
 		i: true,
-		l: {a: 38600, j: 7080, k: 33880, p: 170540, r: 18000, s: 49560, b: 15840, u: 60000, c: 356880, v: 10000, d: 57990, A: 21740, B: 6200, C: 117880, e: 17000},
-		w: 'Atiesh'
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Kromcrush'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 134080, o: 513260, q: 89590, b: 26000, t: 20000, c: 400000, x: 534260, y: 33000, d: 80000, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 52220, m: 21620, n: 46140, o: 170640, q: 51960, b: 26000, t: 13500, c: 400000, x: 320680, y: 20820, d: 78770, z: 24000, e: 17000},
 		i: true,
-		l: {a: 41420, j: 6240, k: 26770, p: 124720, r: 18000, s: 41260, b: 17340, u: 60000, c: 279460, v: 4500, d: 46800, A: 22000, B: 1660, C: 112300, e: 17000},
-		w: 'Ashkandi'
+		l: {a: 21560, j: 8940, k: 22470, p: 133060, r: 18000, s: 37780, b: 15000, u: 54570, c: 274520, v: 7200, d: 39160, A: 13560, B: 3800, C: 66080, e: 16660},
+		w: 'Remulos'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 87120, m: 27760, n: 104340, o: 293980, q: 77890, b: 26000, t: 20000, c: 400000, x: 305940, y: 30520, d: 80000, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 110770, o: 345460, q: 84330, b: 26000, t: 20000, c: 400000, x: 336980, y: 31560, d: 80000, z: 24000, e: 17000},
 		i: true,
-		l: {a: 42860, j: 11320, k: 48250, p: 149860, r: 18000, s: 74240, b: 15320, u: 60000, c: 321080, v: 10000, d: 54550, A: 17700, B: 5940, C: 93540, e: 16480},
+		l: {a: 47880, j: 11700, k: 50860, p: 159480, r: 18000, s: 76800, b: 15920, u: 60000, c: 339400, v: 10000, d: 58740, A: 18700, B: 6580, C: 106520, e: 17000},
 		w: 'Azuresong'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 102960, o: 464500, q: 83460, b: 26000, t: 20000, c: 400000, x: 582540, y: 33000, d: 80000, z: 24000, e: 17000},
+		g: {f: 9940, h: 17780, a: 54660, m: 19780, n: 72600, o: 242840, q: 50380, b: 11780, t: 16480, c: 164480, x: 208980, y: 19280, d: 33150, z: 24000, e: 11820},
 		i: true,
-		l: {a: 54020, j: 10660, k: 33940, p: 208400, r: 18000, s: 55200, b: 20100, u: 39700, c: 278540, v: 10000, d: 50350, A: 22000, B: 7380, C: 243920, e: 17000},
+		l: {a: 60640, j: 14260, k: 31770, p: 117380, r: 18000, s: 63300, b: 18460, u: 46840, c: 184060, v: 10000, d: 46610, A: 19960, B: 8680, C: 123960, e: 17000},
+		w: 'Loatheb'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Netherwind'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 110170, o: 530020, q: 90000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 60400, j: 11000, k: 37030, p: 214580, r: 18000, s: 61820, b: 21100, u: 45380, c: 307600, v: 10000, d: 53930, A: 22000, B: 7680, C: 250000, e: 17000},
 		w: 'Heartseeker'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 36780, m: 14580, n: 43060, o: 216900, q: 38690, b: 18080, t: 11580, c: 389460, x: 333700, y: 33000, d: 56270, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 78500, m: 22420, n: 110140, o: 470360, q: 89550, b: 19120, t: 15900, c: 400000, x: 402720, y: 25040, d: 50010, z: 24000, e: 17000},
 		i: true,
-		l: {a: 53460, j: 10160, k: 27430, p: 250000, r: 18000, s: 60080, b: 26000, u: 54630, c: 400000, v: 10000, d: 79680, A: 18320, B: 7980, C: 104600, e: 17000},
+		l: {a: 86320, j: 14020, k: 53500, p: 250000, r: 18000, s: 73480, b: 26000, u: 60000, c: 400000, v: 10000, d: 67180, A: 22000, B: 9580, C: 163620, e: 17000},
+		w: 'Kirtonos'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 41360, m: 17340, n: 53590, o: 281920, q: 45510, b: 19060, t: 12600, c: 400000, x: 362120, y: 33000, d: 60630, z: 24000, e: 17000},
+		i: true,
+		l: {a: 63020, j: 11320, k: 32480, p: 250000, r: 18000, s: 66500, b: 26000, u: 59250, c: 400000, v: 10000, d: 80000, A: 20400, B: 9960, C: 114480, e: 17000},
 		w: 'Kurinnaxx'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 52000, m: 17200, n: 56700, o: 235120, q: 48720, b: 26000, t: 10800, c: 400000, x: 408540, y: 14500, d: 58380, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 27860, m: 15480, n: 33080, o: 224920, q: 33070, b: 13140, t: 7200, c: 400000, x: 330900, y: 12680, d: 73160, z: 24000, e: 17000},
 		i: true,
-		l: {a: 31140, j: 5320, k: 22630, p: 214900, r: 18000, s: 35120, b: 17940, u: 54260, c: 400000, v: 10000, d: 45490, A: 14560, B: 5100, C: 75560, e: 17000},
-		w: 'Grobbulus'
+		l: {a: 41740, j: 9640, k: 33290, p: 250000, r: 18000, s: 45760, b: 26000, u: 60000, c: 400000, v: 10000, d: 78010, A: 17040, B: 8160, C: 120300, e: 17000},
+		w: 'Yojamba'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 521020, q: 103270, b: 26000, t: 20000, c: 400000, x: 484860, y: 33000, d: 80000, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
 		i: true,
-		l: {a: 90000, j: 12840, k: 60000, p: 172980, r: 18000, s: 91520, b: 26000, u: 60000, c: 349020, v: 10000, d: 80000, A: 22000, B: 9360, C: 217180, e: 17000},
-		w: 'Old Blanchy'
-	},
-		{
-		g: {f: 14000, h: 20000, a: 90000, m: 25540, n: 89710, o: 261620, q: 65230, b: 23440, t: 13560, c: 400000, x: 290980, y: 33000, d: 80000, z: 24000, e: 17000},
-		i: true,
-		l: {a: 35860, j: 8220, k: 24540, p: 124260, r: 18000, s: 48780, b: 11680, u: 60000, c: 253940, v: 10000, d: 43070, A: 19240, B: 3880, C: 101360, e: 17000},
-		w: 'Bloodsail Buccaneers'
-	},
-		{
-		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 110390, o: 417540, q: 79000, b: 26000, t: 20000, c: 400000, x: 530980, y: 33000, d: 80000, z: 24000, e: 17000},
-		i: true,
-		l: {a: 60040, j: 11880, k: 38450, p: 177960, r: 18000, s: 58400, b: 17960, u: 60000, c: 400000, v: 10000, d: 49340, A: 16920, B: 6500, C: 102920, e: 17000},
-		w: 'Myzrael'
-	},
-		{
-		g: {f: 10720, h: 20000, a: 30520, m: 13220, n: 49120, o: 207820, q: 22170, b: 19300, t: 7600, c: 400000, x: 278140, y: 11760, d: 30370, z: 24000, e: 16060},
-		i: true,
-		l: {a: 53780, j: 7740, k: 32230, p: 250000, r: 18000, s: 51100, b: 26000, u: 60000, c: 400000, v: 10000, d: 50910, A: 18280, B: 10000, C: 111700, e: 17000},
-		w: 'Fairbanks'
-	},
-		{
-		g: {f: 10720, h: 9600, a: 18860, m: 14160, n: 29380, o: 177980, q: 19820, b: 8020, t: 7160, c: 166820, x: 149220, y: 11380, d: 33070, z: 24000, e: 11940},
-		i: true,
-		l: {a: 10900, j: 3500, k: 13140, p: 79720, r: 9300, s: 14940, b: 7160, u: 19450, c: 137700, v: 9320, d: 19610, A: 3260, B: 3120, C: 36440, e: 17000},
-		w: 'Anathema'
-	},
-		{
-		g: {f: 13080, h: 20000, a: 22860, m: 14600, n: 26610, o: 122740, q: 26970, b: 25440, t: 7000, c: 400000, x: 269440, y: 13380, d: 38270, z: 24000, e: 17000},
-		i: true,
-		l: {a: 35580, j: 12440, k: 29890, p: 194740, r: 18000, s: 44740, b: 23440, u: 60000, c: 400000, v: 10000, d: 65850, A: 17560, B: 5220, C: 72400, e: 17000},
-		w: 'Rattlegore'
-	},
-		{
-		g: {f: 2080, h: 5160, a: 2540, m: 6480, n: 32930, o: 97260, q: 13260, b: 140, t: 4600, c: 12240, x: 111600, y: 3260, d: 10720, z: 23040, e: 120},
-		i: true,
-		l: {a: 45720, j: 13920, k: 34360, p: 161240, r: 18000, s: 44340, b: 24020, u: 55890, c: 287540, v: 9980, d: 68120, A: 14800, B: 5800, C: 73260, e: 17000},
-		w: 'Thalnos'
-	},
-		{
-		g: {f: 14000, h: 20000, a: 85060, m: 26220, n: 161840, o: 630600, q: 89010, b: 26000, t: 20000, c: 400000, x: 451760, y: 33000, d: 63220, z: 24000, e: 17000},
-		i: true,
-		l: {a: 69780, j: 13420, k: 43150, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 65970, A: 22000, B: 10000, C: 223700, e: 17000},
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
 		w: 'Whitemane'
 	},
 		{
-		g: {f: 14000, h: 13340, a: 26200, m: 9080, n: 26420, o: 95740, q: 23900, b: 10940, t: 7620, c: 222880, x: 187360, y: 9720, d: 19980, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 174000, o: 620860, q: 110000, b: 26000, t: 20000, c: 400000, x: 581380, y: 33000, d: 80000, z: 24000, e: 17000},
 		i: true,
-		l: {a: 12400, j: 4220, k: 11490, p: 79960, r: 13240, s: 17100, b: 9580, u: 19690, c: 138120, v: 10000, d: 24830, A: 5220, B: 2480, C: 45820, e: 10100},
-		w: 'Deviate Delight'
+		l: {a: 52000, j: 7300, k: 32430, p: 151280, r: 18000, s: 46740, b: 20060, u: 60000, c: 318500, v: 5200, d: 53890, A: 22000, B: 1820, C: 137100, e: 17000},
+		w: 'Ashkandi'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 38200, m: 13900, n: 51750, o: 262260, q: 31230, b: 26000, t: 11760, c: 400000, x: 334460, y: 21280, d: 56470, z: 24000, e: 17000},
+		g: {f: 240, h: 1840, a: 780, m: 1220, n: 3120, o: 8740, q: 730, b: 420, t: 80, c: 11120, x: 11480, y: 760, d: 1970, z: 12240, e: 920},
 		i: true,
-		l: {a: 58540, j: 14020, k: 38440, p: 250000, r: 18000, s: 62480, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 19300, B: 10000, C: 124580, e: 17000},
-		w: 'Bigglesworth'
+		l: {a: 8980, j: 1720, k: 2720, p: 17780, r: 7380, s: 5420, b: 2320, u: 5340, c: 45000, v: 1500, d: 9390, A: 2420, B: 1060, C: 5080, e: 3640},
+		w: 'Sul\'thraze'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 33400, m: 10140, n: 41570, o: 165200, q: 22420, b: 20820, t: 9220, c: 335160, x: 197140, y: 10080, d: 31600, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 78240, m: 27140, n: 149220, o: 652660, q: 77080, b: 26000, t: 20000, c: 400000, x: 575840, y: 30900, d: 76330, z: 24000, e: 17000},
 		i: true,
-		l: {a: 31120, j: 6760, k: 17580, p: 152600, r: 18000, s: 31060, b: 22920, u: 39850, c: 400000, v: 5000, d: 45750, A: 13880, B: 5660, C: 62020, e: 17000},
-		w: 'Blaumeux'
-	},
-		{
-		g: {f: 14000, h: 15420, a: 34860, m: 11240, n: 22790, o: 80900, q: 24900, b: 9380, t: 10580, c: 209020, x: 116200, y: 11720, d: 50990, z: 24000, e: 17000},
-		i: true,
-		l: {a: 7760, j: 6620, k: 16170, p: 47860, r: 12360, s: 21400, b: 3580, u: 19860, c: 29980, v: 4140, d: 11610, A: 5400, B: 1380, C: 42360, e: 17000},
-		w: 'Arcanite Reaper'
-	},
-		{
-		g: {f: 14000, h: 20000, a: 68760, m: 24360, n: 107580, o: 537780, q: 50910, b: 25520, t: 20000, c: 400000, x: 535080, y: 28560, d: 69030, z: 24000, e: 17000},
-		i: true,
-		l: {a: 75320, j: 19000, k: 52260, p: 250000, r: 18000, s: 90380, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 219720, e: 17000},
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 249060, e: 17000},
 		w: 'Thunderfury'
 	},
 		{
-		g: {f: 14000, h: 20000, a: 69940, m: 19940, n: 85680, o: 388420, q: 60010, b: 16220, t: 13680, c: 400000, x: 341380, y: 19560, d: 46080, z: 24000, e: 17000},
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
 		i: true,
-		l: {a: 78620, j: 13440, k: 43650, p: 250000, r: 18000, s: 67980, b: 26000, u: 60000, c: 400000, v: 10000, d: 58870, A: 22000, B: 8660, C: 150240, e: 17000},
-		w: 'Kirtonos'
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Earthfury'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 88900, m: 25000, n: 163410, o: 626280, q: 88180, b: 24280, t: 17840, c: 400000, x: 472760, y: 31920, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 235100, e: 17000},
+		w: 'Mankrik'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Herod'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Skeram'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 87980, m: 28000, n: 132370, o: 325020, q: 96210, b: 19620, t: 20000, c: 392820, x: 386940, y: 33000, d: 50310, z: 24000, e: 17000},
+		i: true,
+		l: {a: 41020, j: 2780, k: 50630, p: 160760, r: 16620, s: 56700, b: 13940, u: 40870, c: 97520, v: 10000, d: 49190, A: 16820, B: 6540, C: 140140, e: 12660},
+		w: 'Felstriker'
+	},
+		{
+		g: {f: 3040, h: 6880, a: 2580, m: 7420, n: 33520, o: 120360, q: 13580, b: 140, t: 5140, c: 13580, x: 113620, y: 4400, d: 14340, z: 23240, e: 140},
+		i: true,
+		l: {a: 47620, j: 15540, k: 41020, p: 177780, r: 18000, s: 50400, b: 25320, u: 60000, c: 326880, v: 10000, d: 72050, A: 17020, B: 6380, C: 91140, e: 17000},
+		w: 'Thalnos'
+	},
+		{
+		g: {f: 14000, h: 14200, a: 29980, m: 10000, n: 28810, o: 111880, q: 26710, b: 11740, t: 8100, c: 253840, x: 207900, y: 10560, d: 22880, z: 24000, e: 17000},
+		i: true,
+		l: {a: 14240, j: 4400, k: 14010, p: 90180, r: 14220, s: 18900, b: 10380, u: 21210, c: 152060, v: 10000, d: 27410, A: 6300, B: 2860, C: 50060, e: 10540},
+		w: 'Deviate Delight'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 66260, m: 18820, n: 112910, o: 551480, q: 60770, b: 26000, t: 17640, c: 400000, x: 506780, y: 33000, d: 61980, z: 24000, e: 17000},
+		i: true,
+		l: {a: 76080, j: 15660, k: 45530, p: 250000, r: 18000, s: 84300, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 21000, B: 10000, C: 218740, e: 17000},
+		w: 'Arugal'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 677740, q: 110000, b: 26000, t: 20000, c: 400000, x: 531180, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 14920, k: 60000, p: 221460, r: 18000, s: 96000, b: 26000, u: 60000, c: 388720, v: 10000, d: 80000, A: 22000, B: 10000, C: 245760, e: 17000},
+		w: 'Old Blanchy'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 26700, m: 15400, n: 31430, o: 191320, q: 32360, b: 26000, t: 10600, c: 400000, x: 301200, y: 15220, d: 40420, z: 24000, e: 17000},
+		i: true,
+		l: {a: 51280, j: 16260, k: 40190, p: 217760, r: 18000, s: 56020, b: 26000, u: 60000, c: 400000, v: 10000, d: 79790, A: 22000, B: 6900, C: 92960, e: 17000},
+		w: 'Rattlegore'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 54100, m: 23080, n: 62350, o: 235560, q: 53010, b: 24200, t: 15120, c: 400000, x: 282000, y: 23400, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 49540, j: 10240, k: 32190, p: 144520, r: 18000, s: 52120, b: 19520, u: 60000, c: 387640, v: 10000, d: 64000, A: 21820, B: 6740, C: 80360, e: 17000},
+		w: 'Windseeker'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 65280, m: 19580, n: 83840, o: 358800, q: 63670, b: 26000, t: 14920, c: 400000, x: 480500, y: 18320, d: 70180, z: 24000, e: 17000},
+		i: true,
+		l: {a: 44680, j: 6980, k: 27510, p: 250000, r: 18000, s: 59860, b: 21660, u: 60000, c: 400000, v: 10000, d: 52000, A: 17080, B: 8460, C: 119760, e: 17000},
+		w: 'Grobbulus'
+	},
+		{
+		g: {f: 13340, h: 17880, a: 46900, m: 10780, n: 29620, o: 167820, q: 20400, b: 12960, t: 6500, c: 233640, x: 169880, y: 8220, d: 28910, z: 24000, e: 17000},
+		i: true,
+		l: {a: 36620, j: 7340, k: 20710, p: 174020, r: 18000, s: 38840, b: 22460, u: 47100, c: 400000, v: 8580, d: 42310, A: 12160, B: 3000, C: 66460, e: 17000},
+		w: 'Smolderweb'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 120570, o: 476780, q: 86790, b: 26000, t: 20000, c: 400000, x: 572560, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 75760, j: 14520, k: 42990, p: 193800, r: 18000, s: 72280, b: 19940, u: 60000, c: 400000, v: 10000, d: 57180, A: 20480, B: 7760, C: 126680, e: 17000},
+		w: 'Myzrael'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Faerlina'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Westfall'
+	},
+		{
+		g: {f: 14000, h: 16020, a: 35580, m: 11800, n: 23570, o: 83280, q: 25660, b: 9580, t: 10800, c: 214820, x: 120900, y: 11820, d: 52170, z: 24000, e: 17000},
+		i: true,
+		l: {a: 8480, j: 6700, k: 16970, p: 53000, r: 12880, s: 22120, b: 3880, u: 23800, c: 33400, v: 4280, d: 13190, A: 5840, B: 1380, C: 43000, e: 17000},
+		w: 'Arcanite Reaper'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 27260, n: 99390, o: 289860, q: 70880, b: 24820, t: 14660, c: 400000, x: 311400, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 43680, j: 8580, k: 27550, p: 136340, r: 18000, s: 57320, b: 12200, u: 60000, c: 269980, v: 10000, d: 47150, A: 21520, B: 4460, C: 111780, e: 17000},
+		w: 'Bloodsail Buccaneers'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 122070, o: 522280, q: 106500, b: 26000, t: 20000, c: 400000, x: 575340, y: 30920, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 49740, j: 9620, k: 39350, p: 189640, r: 18000, s: 58180, b: 17940, u: 60000, c: 392860, v: 10000, d: 63880, A: 22000, B: 7200, C: 153200, e: 17000},
+		w: 'Atiesh'
+	},
+		{
+		g: {f: 12500, h: 20000, a: 38960, m: 14700, n: 64740, o: 311780, q: 30290, b: 22900, t: 14420, c: 400000, x: 326420, y: 15220, d: 38780, z: 24000, e: 17000},
+		i: true,
+		l: {a: 62700, j: 8600, k: 38260, p: 250000, r: 18000, s: 57060, b: 26000, u: 60000, c: 400000, v: 10000, d: 56500, A: 21260, B: 10000, C: 128960, e: 17000},
+		w: 'Fairbanks'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 139140, o: 623100, q: 85210, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 74220, j: 15940, k: 46990, p: 250000, r: 18000, s: 75300, b: 26000, u: 57540, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 206580, e: 17000},
+		w: 'Benediction'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 42240, m: 12320, n: 72030, o: 235360, q: 31510, b: 22460, t: 10980, c: 384700, x: 243780, y: 14160, d: 36020, z: 24000, e: 17000},
+		i: true,
+		l: {a: 38780, j: 9280, k: 21470, p: 181580, r: 18000, s: 39760, b: 26000, u: 45950, c: 400000, v: 10000, d: 52600, A: 16360, B: 7240, C: 89920, e: 17000},
+		w: 'Blaumeux'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Incendius'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Sulfuras'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 90000, m: 28000, n: 180000, o: 800000, q: 110000, b: 26000, t: 20000, c: 400000, x: 600000, y: 33000, d: 80000, z: 24000, e: 17000},
+		i: true,
+		l: {a: 90000, j: 19000, k: 60000, p: 250000, r: 18000, s: 96000, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 22000, B: 10000, C: 250000, e: 17000},
+		w: 'Pagle'
+	},
+		{
+		g: {f: 14000, h: 20000, a: 53180, m: 18640, n: 108280, o: 441940, q: 51120, b: 26000, t: 17000, c: 400000, x: 409980, y: 27640, d: 64480, z: 24000, e: 17000},
+		i: true,
+		l: {a: 73700, j: 15920, k: 43460, p: 250000, r: 18000, s: 69560, b: 26000, u: 60000, c: 400000, v: 10000, d: 80000, A: 21360, B: 10000, C: 156260, e: 17000},
+		w: 'Bigglesworth'
+	},
+		{
+		g: {f: 14000, h: 10280, a: 27200, m: 15280, n: 40500, o: 235620, q: 23570, b: 9240, t: 8120, c: 197240, x: 172060, y: 13540, d: 38320, z: 24000, e: 14020},
+		i: true,
+		l: {a: 17680, j: 4820, k: 18030, p: 99220, r: 12200, s: 24720, b: 9120, u: 25360, c: 162920, v: 10000, d: 25370, A: 3920, B: 3780, C: 42240, e: 17000},
+		w: 'Anathema'
 	}
 	]);
 var $elm$core$Result$Err = function (a) {
@@ -5305,15 +5425,29 @@ var $author$project$Main$sortData = function (model) {
 var $elm$core$Basics$not = _Basics_not;
 var $author$project$Main$update = F2(
 	function (msg, model) {
-		var serverName = msg;
-		var updateServerCollapseState = function (s) {
-			return _Utils_eq(s.w, serverName) ? _Utils_update(
-				s,
-				{i: !s.i}) : s;
-		};
-		var newModel = A2($elm$core$List$map, updateServerCollapseState, model);
-		return newModel;
+		switch (msg.$) {
+			case 0:
+				var serverName = msg.a;
+				var updateServerCollapseState = function (s) {
+					return _Utils_eq(s.w, serverName) ? _Utils_update(
+						s,
+						{i: !s.i}) : s;
+				};
+				var newModel = A2($elm$core$List$map, updateServerCollapseState, model);
+				return newModel;
+			case 1:
+				return A2(
+					$elm$core$List$sortBy,
+					function (s) {
+						return s.w;
+					},
+					model);
+			default:
+				return $author$project$Main$sortData(model);
+		}
 	});
+var $author$project$Main$SortPercentComplete = {$: 2};
+var $author$project$Main$SortRealm = {$: 1};
 var $elm$html$Html$a = _VirtualDom_node('a');
 var $elm$json$Json$Encode$string = _Json_wrap;
 var $elm$html$Html$Attributes$stringProperty = F2(
@@ -5336,6 +5470,12 @@ var $elm$html$Html$b = _VirtualDom_node('b');
 var $elm$html$Html$br = _VirtualDom_node('br');
 var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
 var $elm$html$Html$div = _VirtualDom_node('div');
+var $elm$html$Html$Attributes$href = function (url) {
+	return A2(
+		$elm$html$Html$Attributes$stringProperty,
+		'href',
+		_VirtualDom_noJavaScriptUri(url));
+};
 var $elm$html$Html$Attributes$id = $elm$html$Html$Attributes$stringProperty('id');
 var $elm$html$Html$img = _VirtualDom_node('img');
 var $elm$html$Html$Attributes$name = $elm$html$Html$Attributes$stringProperty('name');
@@ -5344,27 +5484,6 @@ var $elm$virtual_dom$VirtualDom$node = function (tag) {
 		_VirtualDom_noScript(tag));
 };
 var $elm$html$Html$node = $elm$virtual_dom$VirtualDom$node;
-var $elm$html$Html$p = _VirtualDom_node('p');
-var $elm$html$Html$span = _VirtualDom_node('span');
-var $elm$html$Html$Attributes$src = function (url) {
-	return A2(
-		$elm$html$Html$Attributes$stringProperty,
-		'src',
-		_VirtualDom_noJavaScriptOrHtmlUri(url));
-};
-var $elm$html$Html$table = _VirtualDom_node('table');
-var $elm$html$Html$tbody = _VirtualDom_node('tbody');
-var $elm$html$Html$td = _VirtualDom_node('td');
-var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
-var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
-var $elm$html$Html$tr = _VirtualDom_node('tr');
-var $author$project$Main$Collapse = $elm$core$Basics$identity;
-var $elm$html$Html$Attributes$href = function (url) {
-	return A2(
-		$elm$html$Html$Attributes$stringProperty,
-		'href',
-		_VirtualDom_noJavaScriptUri(url));
-};
 var $elm$virtual_dom$VirtualDom$Normal = function (a) {
 	return {$: 0, a: a};
 };
@@ -5382,7 +5501,24 @@ var $elm$html$Html$Events$onClick = function (msg) {
 		'click',
 		$elm$json$Json$Decode$succeed(msg));
 };
-var $elm$core$Basics$round = _Basics_round;
+var $elm$html$Html$p = _VirtualDom_node('p');
+var $elm$html$Html$small = _VirtualDom_node('small');
+var $elm$html$Html$span = _VirtualDom_node('span');
+var $elm$html$Html$Attributes$src = function (url) {
+	return A2(
+		$elm$html$Html$Attributes$stringProperty,
+		'src',
+		_VirtualDom_noJavaScriptOrHtmlUri(url));
+};
+var $elm$html$Html$table = _VirtualDom_node('table');
+var $elm$html$Html$tbody = _VirtualDom_node('tbody');
+var $elm$html$Html$td = _VirtualDom_node('td');
+var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
+var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
+var $elm$html$Html$tr = _VirtualDom_node('tr');
+var $author$project$Main$Collapse = function (a) {
+	return {$: 0, a: a};
+};
 var $author$project$Main$viewCategoryBottom = A2(
 	$elm$html$Html$table,
 	_List_fromArray(
@@ -5492,7 +5628,7 @@ var $author$project$Main$viewCategoryServerTotal = function (model) {
 	var sumMax = 3850000;
 	var sumCurrent = $author$project$Main$sumAllMats(model);
 	var percentComplete = (_Utils_cmp(sumCurrent, sumMax) < 0) ? ((sumCurrent / sumMax) * 100.0) : 100.0;
-	var barWidth = $elm$core$Basics$round((percentComplete / 100.0) * 554);
+	var barWidth = $elm$core$Basics$floor((percentComplete / 100.0) * 554);
 	var styleStr = 'width: ' + ($elm$core$String$fromInt(barWidth) + '; background: url(images/servertotalbar.gif);');
 	return A2(
 		$elm$html$Html$table,
@@ -5638,7 +5774,7 @@ var $author$project$Main$viewCategoryServerTotal = function (model) {
 																	[
 																		$elm$html$Html$text(
 																		$elm$core$String$fromInt(
-																			$elm$core$Basics$round(percentComplete)) + ('% - ' + ($elm$core$String$fromInt(sumCurrent) + ('/' + $elm$core$String$fromInt(sumMax)))))
+																			$elm$core$Basics$floor(percentComplete)) + ('% - ' + ($elm$core$String$fromInt(sumCurrent) + ('/' + $elm$core$String$fromInt(sumMax)))))
 																	]))
 															]))
 													]))
@@ -5651,7 +5787,7 @@ var $author$project$Main$viewCategoryServerTotal = function (model) {
 var $author$project$Main$viewCategoryTotal = F3(
 	function (category, current, maximum) {
 		var percentComplete = (_Utils_cmp(current, maximum) < 0) ? ((current / maximum) * 100.0) : 100.0;
-		var barWidth = $elm$core$Basics$round((percentComplete / 100.0) * 150);
+		var barWidth = $elm$core$Basics$floor((percentComplete / 100.0) * 150);
 		var styleStr = 'width: ' + ($elm$core$String$fromInt(barWidth) + '; background: url(images/bluebar.gif);');
 		return A2(
 			$elm$html$Html$table,
@@ -5840,7 +5976,7 @@ var $author$project$Main$viewCategoryTotal = F3(
 														[
 															$elm$html$Html$text(
 															$elm$core$String$fromInt(
-																$elm$core$Basics$round(percentComplete)) + '%')
+																$elm$core$Basics$floor(percentComplete)) + '%')
 														]))
 												]))
 										]))
@@ -5851,7 +5987,7 @@ var $author$project$Main$viewCategoryTotal = F3(
 var $author$project$Main$viewSpecificServerDataRow = F3(
 	function (materialName, materialCurrent, materialMaximum) {
 		var percentComplete = (_Utils_cmp(materialCurrent, materialMaximum) < 0) ? ((materialCurrent / materialMaximum) * 100.0) : 100.0;
-		var barWidth = $elm$core$Basics$round((percentComplete / 100.0) * 150);
+		var barWidth = $elm$core$Basics$floor((percentComplete / 100.0) * 150);
 		var styleStr = function () {
 			var imageSrc = (_Utils_cmp(materialCurrent, (materialMaximum / 2) | 0) < 0) ? 'redbar.gif' : ((_Utils_cmp(materialCurrent, materialMaximum) < 0) ? 'yellowbar.gif' : 'greenbar.gif');
 			return 'width: ' + ($elm$core$String$fromInt(barWidth) + ('; background: url(images/' + (imageSrc + ');')));
@@ -6017,7 +6153,7 @@ var $author$project$Main$viewSpecificServerDataRow = F3(
 														[
 															$elm$html$Html$text(
 															$elm$core$String$fromInt(
-																$elm$core$Basics$round(percentComplete)) + '%')
+																$elm$core$Basics$floor(percentComplete)) + '%')
 														]))
 												]))
 										]))
@@ -6225,8 +6361,9 @@ var $author$project$Main$viewServerOverview = function (model) {
 	var maxSum = 3850000;
 	var currentSum = $author$project$Main$sumAllMats(model);
 	var percentComplete = (_Utils_cmp(currentSum, maxSum) < 0) ? ((currentSum / maxSum) * 100.0) : 100.0;
+	var suppliesStr = (_Utils_cmp(currentSum, maxSum) < 0) ? 'images/supplies_red.gif' : 'images/supplies_green.gif';
 	var collapsedAttr = model.i ? 'display:none;' : 'display:table-row;';
-	var barWidth = $elm$core$Basics$round((percentComplete / 100.0) * 308);
+	var barWidth = $elm$core$Basics$floor((percentComplete / 100.0) * 308);
 	var styleStr = 'width: ' + ($elm$core$String$fromInt(barWidth) + '; background: url(images/tealbar.gif);');
 	return A2(
 		$elm$html$Html$table,
@@ -6302,7 +6439,8 @@ var $author$project$Main$viewServerOverview = function (model) {
 										_List_fromArray(
 											[
 												$elm$html$Html$Attributes$href('#'),
-												$elm$html$Html$Events$onClick(model.w)
+												$elm$html$Html$Events$onClick(
+												$author$project$Main$Collapse(model.w))
 											]),
 										_List_fromArray(
 											[
@@ -6327,7 +6465,7 @@ var $author$project$Main$viewServerOverview = function (model) {
 											]),
 										_List_fromArray(
 											[
-												$elm$html$Html$text('--')
+												$elm$html$Html$text('')
 											]))
 									])),
 								A2(
@@ -6402,7 +6540,7 @@ var $author$project$Main$viewServerOverview = function (model) {
 										$elm$html$Html$img,
 										_List_fromArray(
 											[
-												$elm$html$Html$Attributes$src('images/supplies_gray.gif')
+												$elm$html$Html$Attributes$src(suppliesStr)
 											]),
 										_List_Nil)
 									])),
@@ -6414,7 +6552,7 @@ var $author$project$Main$viewServerOverview = function (model) {
 									]),
 								_List_fromArray(
 									[
-										$elm$html$Html$text('--')
+										$elm$html$Html$text('')
 									])),
 								A2(
 								$elm$html$Html$td,
@@ -6437,7 +6575,7 @@ var $author$project$Main$viewServerOverview = function (model) {
 									]),
 								_List_fromArray(
 									[
-										$elm$html$Html$text('--')
+										$elm$html$Html$text('')
 									]))
 							])),
 						A2(
@@ -6471,7 +6609,7 @@ var $author$project$Main$viewServerOverview = function (model) {
 													[
 														$elm$html$Html$text(
 														$elm$core$String$fromInt(
-															$elm$core$Basics$round(percentComplete)) + '%')
+															$elm$core$Basics$floor(percentComplete)) + '%')
 													]))
 											]))
 									]))
@@ -6661,7 +6799,7 @@ var $author$project$Main$view = function (model) {
 																	]),
 																_List_fromArray(
 																	[
-																		$elm$html$Html$text('Ahn\'Qiraj War Effort Rankings')
+																		$elm$html$Html$text('WoW Classic Ahn\'Qiraj War Effort Rankings')
 																	]))
 															])),
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
@@ -6669,7 +6807,22 @@ var $author$project$Main$view = function (model) {
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$elm$html$Html$text('Once each realm has gathered the war effort supplies and crafted the Scepter of the Shifting Sands,'),
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
-														$elm$html$Html$text('they can open The Gates of Ahn\'Qiraj.')
+														$elm$html$Html$text('they can open The Gates of Ahn\'Qiraj.'),
+														A2(
+														$elm$html$Html$p,
+														_List_Nil,
+														_List_fromArray(
+															[
+																A2(
+																$elm$html$Html$small,
+																_List_Nil,
+																_List_fromArray(
+																	[
+																		$elm$html$Html$text('Note: Data is gathered from servers individually from an addon, data listed here is likely slightly behind the official numbers.'),
+																		A2($elm$html$Html$br, _List_Nil, _List_Nil),
+																		$elm$html$Html$text('')
+																	]))
+															]))
 													])),
 												A2(
 												$elm$html$Html$p,
@@ -6752,7 +6905,17 @@ var $author$project$Main$view = function (model) {
 																											]),
 																										_List_fromArray(
 																											[
-																												$elm$html$Html$text('Realm Name')
+																												A2(
+																												$elm$html$Html$a,
+																												_List_fromArray(
+																													[
+																														$elm$html$Html$Attributes$href('#'),
+																														$elm$html$Html$Events$onClick($author$project$Main$SortRealm)
+																													]),
+																												_List_fromArray(
+																													[
+																														$elm$html$Html$text('Realm Name')
+																													]))
 																											]))
 																									]))
 																							]))
@@ -6781,7 +6944,7 @@ var $author$project$Main$view = function (model) {
 																											]),
 																										_List_fromArray(
 																											[
-																												$elm$html$Html$text('Type')
+																												$elm$html$Html$text('')
 																											]))
 																									]))
 																							]))
@@ -6814,7 +6977,17 @@ var $author$project$Main$view = function (model) {
 																											]),
 																										_List_fromArray(
 																											[
-																												$elm$html$Html$text('Percentage Complete    ')
+																												A2(
+																												$elm$html$Html$a,
+																												_List_fromArray(
+																													[
+																														$elm$html$Html$Attributes$href('#'),
+																														$elm$html$Html$Events$onClick($author$project$Main$SortPercentComplete)
+																													]),
+																												_List_fromArray(
+																													[
+																														$elm$html$Html$text('Percentage Complete    ')
+																													]))
 																											]))
 																									]))
 																							]))
@@ -6872,7 +7045,7 @@ var $author$project$Main$view = function (model) {
 																											]),
 																										_List_fromArray(
 																											[
-																												$elm$html$Html$text('Gate')
+																												$elm$html$Html$text('')
 																											]))
 																									]))
 																							]))
@@ -6896,6 +7069,9 @@ var $author$project$Main$view = function (model) {
 													[
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$elm$html$Html$text('Recreated by Deceit - Rattlegore-US (drivehappy@gmail.com)'),
+														A2($elm$html$Html$br, _List_Nil, _List_Nil),
+														$elm$html$Html$text('Original page designed by Blizzard Entertainment, Inc.'),
+														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														A2($elm$html$Html$br, _List_Nil, _List_Nil),
 														$elm$html$Html$text('World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of'),
